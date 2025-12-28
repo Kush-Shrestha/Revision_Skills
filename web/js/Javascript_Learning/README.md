@@ -1,5 +1,5 @@
 There are 8 data types:
-
+```
 number:- for both floating-point and integer numbers,
 bigint:- for integer numbers of arbitrary length,
 string:- for strings,
@@ -9,6 +9,7 @@ undefined:– a type with a single value undefined, meaning “not assigned”,
 object and symbol: – for complex data structures and unique identifiers, we haven’t learnt them yet.
 Strict mode
 To fully enable all features of modern JavaScript, we should start scripts with "use strict".
+```
 ```
 'use strict';
 
