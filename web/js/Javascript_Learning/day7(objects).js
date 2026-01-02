@@ -6,7 +6,7 @@
 let user = new Object(); // "object constructor" syntax
 let user = {};  // "object literal" syntax
 
-We can immediately put some properties into {... } as “key: value” pairs:
+//We can immediately put some properties into {... } as “key: value” pairs:
 
 let user = {     // an object
     name: "Kushal",  // by key "name" store value "John"
@@ -22,3 +22,25 @@ alert(user.age); // 20
 //To remove a property, we can use the delete operator:
 
 delete user.age;
+
+//Square bracket
+
+let user = {
+  name: "Kushal",
+  age: 20
+};
+
+let key = prompt("What do you want to know about the user?", "name");
+
+// access by variable
+alert( user[key] ); // Kushal (if enter "name")
+
+// The dot notation cannot be used in a similar way:
+
+let user = {
+  name: "Kushal",
+  age: 20
+};
+
+let key = "name";
+alert( user.key ) // undefined
