@@ -1,0 +1,153 @@
+// we will be learning how to table and forms too
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaning to make table with rowspan and colspan and forms too </title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Table with Rowspan and Colspan</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                margin: 0;
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            }
+    
+            .container {
+                background: white;
+                padding: 40px;
+                border-radius: 15px;
+                box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            }
+    
+            h1 {
+                text-align: center;
+                color: #333;
+                margin-bottom: 30px;
+            }
+    
+            table {
+                border-collapse: collapse;
+                width: 100%;
+                background: white;
+                overflow: hidden;
+                border-radius: 10px;
+            }
+    
+            th {
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                color: white;
+                padding: 15px;
+                text-align: center;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+    
+            td {
+                padding: 15px;
+                text-align: center;
+                border: 2px solid #e0e0e0;
+            }
+    
+            tr:hover td {
+                background-color: #f5f5f5;
+                transition: background-color 0.3s ease;
+            }
+    
+            .subject-cell {
+                background-color: #f0f4ff;
+                font-weight: bold;
+                color: #667eea;
+            }
+    
+            .total-cell {
+                background-color: #fff3cd;
+                font-weight: bold;
+                color: #856404;
+            }
+    
+            .average-cell {
+                background-color: #d4edda;
+                font-weight: bold;
+                color: #155724;
+            }
+    
+            .header-cell {
+                background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+                color: white;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Student Grade Report</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2" class="header-cell">Student Information</th>
+                        <th colspan="3">Semester Grades</th>
+                        <th rowspan="2">Final Average</th>
+                    </tr>
+                    <tr>
+                        <th>Name</th>
+                        <th>ID</th>
+                        <th>Math</th>
+                        <th>Science</th>
+                        <th>English</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alice Johnson</td>
+                        <td>001</td>
+                        <td>92</td>
+                        <td>88</td>
+                        <td>95</td>
+                        <td class="average-cell">91.7</td>
+                    </tr>
+                    <tr>
+                        <td>Bob Smith</td>
+                        <td>002</td>
+                        <td>85</td>
+                        <td>90</td>
+                        <td>87</td>
+                        <td class="average-cell">87.3</td>
+                    </tr>
+                    <tr>
+                        <td>Carol Davis</td>
+                        <td>003</td>
+                        <td>78</td>
+                        <td>82</td>
+                        <td>89</td>
+                        <td class="average-cell">83.0</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="total-cell">Class Average</td>
+                        <td class="total-cell">85.0</td>
+                        <td class="total-cell">86.7</td>
+                        <td class="total-cell">90.3</td>
+                        <td class="total-cell">87.3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+    </html>
+</body>
+
+</html>
